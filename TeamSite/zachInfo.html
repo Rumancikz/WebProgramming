@@ -1,3 +1,25 @@
+<!--  
+  * Program:  Team_1_P01_CH_02_09032020.html zachInfo.html
+  * purpose: Group Project 1 - Describe our team (Zach) 
+  * Objectives: 
+    + Team Member information req:
+     - name
+     - addresses
+     - email addresses
+     - majors
+     - grade levels
+     - include pba logo
+    + If you work
+     - include employers
+     - employers’ addresses
+     - job title
+     - and so other relevant information. 
+  * Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
+  * Instructor: Dr. Fazelpour - Copyright © 2020  
+  * Programmer(s): Team 1 - Rumancik, Zach (ZWR); Ragoonanan, Jaggan (DD)  
+  * Date: 09/03/2020  
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,23 +30,81 @@
 </head>
 
 <body>
-    <img src="./media/pbaLogo.jpg" alt="PBA Logo">
-    <div class="Nav">
-        <nav>
-            <a href="./index.html">Home Page</a>
-            <a href="./JJInfo.html">Jaggan Ragoonanan</a>
-        </nav>
-    </div>
-    <h1>Zach Rumancik</h1>
-    <div class="Education">
-        <h2>Education</h2>
-        <ul>
-            <li>Graduated Highschool</li>
-            <li>Expected Graduation from PBA with a B.S. in Computer Science in 2020</li>
-        </ul>
-        <br>
-        <h2>Computer Science Work Experience</h2>
+    <div id="outerwrapper">
+        <header>
+            <img src="./media/pbaLogo.jpg" alt="PBA Logo">
+            <figure>
+                <img style="  
+                        border-radius: 75%;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 25%;" src="images/headshot.jpg" alt="Photo of Zach Rumancik">
+            </figure>
+            <h1 class="myname" style="text-align: center;"><strong>Zach Rumancik</strong></h1>
+            <h3 style="text-align: center;"><em>"Webdesign for you"</em></h3>
+        </header>
 
+        <!-- pba logo -->
+        <div class="Nav">
+            <nav>
+                <a href="./index.html">Home Page</a>
+                <a href="./JJInfo.html">Jaggan Ragoonanan</a>
+            </nav>
+        </div>
+
+        <div id="main">
+            <div class="desktop">
+                <article>
+                    <h2>High School</h2>
+                    <ul>
+                        <li>Graduated from Riverview High School in Sarasota Florida</li>
+                    </ul>
+                    <hr>
+                    <h2>College</h2>
+                    <ul>
+                        <li>Senior currently attending Palm Beach Atlantic University</li>
+                        <li>I am studying to recieve a B.S. in Computer Science with a minor in Biology (2020)</li>
+                    </ul>
+                    <hr>
+                    <h2>Work/Intership Experience</h2>
+                    <ul>
+                        <li>Employed at Publix for 1.5 years (Cashier)</li>
+                        <li>Did a summer internship at a web development company (EESolutions)</li>
+                    </ul>
+                    <hr>
+                    <h2>Programming Experiene</h2>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React JS/JSX Library/Framework</li>
+                        <li>Python w/ Flask Web/API Framework</li>
+                        <li>C#</li>
+                        <li>Visual Basic</li>
+                        <li>SQL</li>
+                        <li>CSS</li>
+                    </ul>
+                    <hr>
+                </article>
+                <section>
+                    <!-- photo of pba -->
+                    <img src="images/PBA.jpg" alt="Photo of PBA">
+                </section>
+            </div>
+            </article>
+            <br>
+            <!-- phone number -->
+            <p>Call Me for more information<a href="tel:2407720939">(240) 772-0939</a> or send me an
+                <!-- email -->
+                <a href="rumanzw@pba.edu">email</a></p>
+            <!-- Address -->
+            <p>You could also visit me in the Watson dorm on the first floor. </p>
+        </div>
+
+    </div>
+    <footer>
+        <br>
+        <p>Last updated on 9/4/2020</p>
+    </footer>
     </div>
 </body>
 
