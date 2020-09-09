@@ -1,0 +1,11 @@
+.spinning {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+.largeCrook {
+    color:red;
+    font-size:150%;
+    transform: rotate(-15deg);
+    transition-duration: 1s;
+    position: absolute;
+}
