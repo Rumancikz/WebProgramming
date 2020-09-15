@@ -9,3 +9,8 @@
     transition-duration: 1s;
     position: absolute;
 }
+
+.nav-container nav a{
+    padding: 0 1rem;
+    font-size: 20px;
+}
