@@ -24,7 +24,7 @@ section {
 }
 #p2 {
   left: 100%;
-  background: #00348C;;
+  background: #012666;;
 }
 #p3 {
   left: 200%;
@@ -32,7 +32,6 @@ section {
 }
 #p4 {
   left: 300%;
-  /* background: deeppink; */
   background-image: url("../images/codingBackgroung.jpg");
   background-position: center;
 }
@@ -99,7 +98,7 @@ ul {
   padding: 0;
   text-align: center;
   }
-ul li {
+ul li, ul ol {
   margin: 30px 0;
 }
 a {
@@ -154,7 +153,7 @@ a {
     display:block;
     text-align: center;
 }
-.work ul {
+.work ul, .progEx ul {
   top: 0;
   bottom: 0;
   left: 0;
@@ -169,18 +168,6 @@ a {
 .progEx {
   display:block;
   text-align: center;
-}
-.progEx ul {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  max-width: fit-content;
-  height: 50%;
-  width: 50%;
-  padding: auto;
-  text-align: center;
-  position: relative;
 }
 .img {
   display: block;
@@ -203,8 +190,12 @@ a {
   color:#00348C
 }
 .face:hover {
-  transform: rotate(360deg);
-  transition-duration: 1s;
+  animation: spin 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes spin {
+  from {rotate: 0deg}
+  to {rotate: 360deg}
 }
 .info {
   text-align: center;
@@ -214,4 +205,7 @@ a {
 }
 .info p:first-child{
   padding-top: 70px;
+}
+.work ul, .progEx ul {
+  font-size: 20px;
 }
