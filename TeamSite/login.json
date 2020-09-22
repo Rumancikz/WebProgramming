@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "name": "Zach Rumancik",
+            "age": 20,
+            "username": "zRumancik",
+            "password": "CoolStoryBro"
+        },
+        {
+            "name": "J.J. Ragoonanan",
+            "age": 21,
+            "username": "JJR",
+            "password": "Pizza"
+        }
+    ]
+}
