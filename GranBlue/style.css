@@ -1,6 +1,7 @@
 .headerImg {
     display: flex;
     max-width: 100vh;
+    justify-content: space-between;
 }
 .headerImg img{
     max-width: 100%;
