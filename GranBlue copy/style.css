@@ -2,15 +2,29 @@
     display: flex;
     max-width: 117vh;
     justify-content: space-between;
-    max-height: 20vh;
+    max-height: 30vh;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-11rem);
 }
 .headerImg img{
     max-width:100%;
 }
+.title{
+    transition:all .5s ease-in-out;
+    transform: translateY(20px);
+    display: inline-block
+}
+.move{
+    transform: translateY(0px);
+}
 body{
-    background-color:#69B4D4 ;
+    background-image: url('./Media/bg.png') ;
+    background-size: cover;
+    background-position: center;
     padding:0rem;
     max-width: 100vmax;
+    padding-top: 10rem;
 } 
 nav{
     display:flex;
@@ -30,43 +44,25 @@ nav a:hover{
 }
 .mainGroup{
     display: flex;
-    flex: 2 1 0;
-}
-.leftSide img{
-    width: 60%;
-    height: 100%;
-}
-.leftSide{
-    max-width: fit-content;
-    display: flex;
-    max-width: fit-content;
-    flex: 1 1 0;
-}
-.rightSide{
-    display: flex;
-    max-width: fit-content;
-    flex: 1 1 0;
-}
-.rightSide img{
-    width: 60%;
-    height: 100%; 
-    padding-left: 40%;  
+    justify-content: center;
 }
 main {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    background-color: hsl(213.1,55.4%,62.2%,80%);
+    padding:6rem;
+    padding-top: 0rem;
+    border-radius: 15%;
 }
 main h1{
     color:white;
+    text-align: center;
 }
 .videos{
     display: flex;
     padding: 1rem;
     justify-content: center;
-}
+}   
 .smallVideos {
     display: flex;
 }
