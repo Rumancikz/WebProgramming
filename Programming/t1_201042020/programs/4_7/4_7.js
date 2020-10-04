@@ -17,10 +17,13 @@
 // which is either "ascending" or "descending". Use this input to
 // determine how to sort the input words.
 
+//creates variable
 const hotdog = prompt('Enter a text that you want to be alphabetized: ').toLowerCase()
+//split input
 const buns = hotdog.split(' ')
+//sorts input alphabetically
 const mustard = buns.sort()
-
+//function to join an array into one string
 function join(mustard) {
     let ketchup = ""
     mustard.forEach( sesameSeed => {
@@ -28,7 +31,7 @@ function join(mustard) {
     });
     return ketchup
 }
-
+//gets input
 const burgers = prompt('Do you want the word in ascending or descending').toLowerCase()
 if (burgers === "ascending")
 {
@@ -36,11 +39,12 @@ if (burgers === "ascending")
 }
 else if (burgers === "descending")
 {
+    //reverses if descending
     mustard.reverse()
     console.log(join(mustard))
 }
 else {
-    console.log(`you mispelled something, Please Try Again`);
+    console.log(`You mispelled something, please try again.`);
 }
 
 

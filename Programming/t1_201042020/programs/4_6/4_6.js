@@ -16,14 +16,18 @@
 // 4.6 Input: A line of text, using prompt.
 // Output: The words of the input text, in alphabetical order.
 
+//gets user input
 const hotdog = prompt('Enter a text that you want to be alphabetized: ').toLowerCase()
+//split input
 const buns = hotdog.split(' ')
+//sorts them alphabetially
 const mustard = buns.sort()
 let ketchup = ""
-
+//loops over each index and adds it to ketchup
 mustard.forEach( sesameSeed => {
     ketchup = ketchup + (sesameSeed + ' ')
 });
+//logs final result
 console.log(ketchup)
 
 

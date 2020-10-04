@@ -26,14 +26,14 @@
 // where each number in the sequence after the second is the sum of the
 // two previous numbers. You must use document.write to produce
 // the output.
-
+// This is a function that will write the first 20 fibonacci numbers in the series
 function yeaOkThatWorks(stringThing) {
     document.open();
     document.write(`<h1>${stringThing}</h1>`);
     document.close();
 }
 
-
+// This function will carry out the fibonacci sequence
 function Fib2(intNumber) {
     let fibArr = []
     for (let i = 0; i <= intNumber; i++){

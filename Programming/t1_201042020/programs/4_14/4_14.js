@@ -17,6 +17,9 @@
 // Parameter: A number.
 // Returns: The number with its digits in reverse order.
 
+//created function reverser and returns a split number, reverses it, and joins it with ""
 function reverser(number){return number.split('').reverse().join('')}
+//asks the user for input
 const input = prompt('Enter a number to be reversed: ')
+//prints out the resut of the function when passing the input
 console.log(reverser(input));

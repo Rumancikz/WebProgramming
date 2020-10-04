@@ -1,0 +1,52 @@
+4.1 Output: A table of the numbers from 5 to 15 and their squares and
+    cubes, using alert.
+4.2 Output: The first 20 Fibonacci numbers, which are defined as in the
+    sequence
+    1, 1, 2, 3, . . .
+    where each number in the sequence after the second is the sum of the
+    two previous numbers. You must use document.write to produce
+    the output.
+4.3 Input: Three numbers, using prompt to get each.
+    Output: The largest of the three input numbers.
+    Hint: Use the predefined function Math.max.
+4.4 Modify the script of Exercise 4.2 to use prompt to input a number n
+    that is the number of the Fibonacci number required as output.
+4.5 Input: A text string, using prompt.
+    Output: Either "Valid name" or "Invalid name", depending on
+    whether the input names fit the required format, which is
+    Last name, first name, middle initial
+    where neither of the names can have more than 15 characters.
+4.6 Input: A line of text, using prompt.
+    Output: The words of the input text, in alphabetical order.
+4.7 Modify the script of Exercise 4.6 to get a second input from the user,
+    which is either "ascending" or "descending". Use this input to
+    determine how to sort the input words.
+4.8 Function: no_zeros
+    Parameter: An array of numbers.
+    Result: The given array must be modified to remove all zero values.
+    Returns: true if the given array included zero values; false otherwise.
+4.9 Function: e_names
+    Parameter: An array of names, represented as strings.
+    Returns: The number of names in the given array that end in either
+    "ie" or "y".
+4.10 Function: first_vowel
+    Parameter: A string.
+    Returns: The position in the string of the leftmost vowel.
+4.11 Function: counter
+    Parameter: An array of numbers.
+    Returns: The numbers of negative elements, zeros, and values greater
+    than zero in the given array.
+    Note: You must use a switch statement in the function.
+4.12 Function: tst_name
+    Parameter: A string.
+    Returns: true if the given string has the form
+    string1, string2 letter
+    where both strings must be all lowercase letters except for the first
+    letter and letter must be uppercase; false otherwise.
+4.13 Function: row_averages
+    Parameter: An array of arrays of numbers.
+    Returns: An array of the averages of each of the rows of the given
+    matrix.
+4.14 Function: reverser
+    Parameter: A number.
+    Returns: The number with its digits in reverse order.
