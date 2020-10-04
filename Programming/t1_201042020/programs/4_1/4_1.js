@@ -15,14 +15,18 @@
 
 
 // 4.1 Output: A table of the numbers from 5 to 15 and their squares and cubes, using alert.
+// These are variables
 var count = 5;
 var cubes;
 var squares;
 var print = "";
+// This while statement will look at the count and do every number between 5 and 15
 while (count >= 5 && count <= 15){ 
     squares = count * count
     cubes = count*count*count
+    // This will print the numbers along with their squares and cubes
     print += `${count} ${squares} ${cubes} \r\n`
+    // This will increment the count up
     count ++
 }
 alert(print)

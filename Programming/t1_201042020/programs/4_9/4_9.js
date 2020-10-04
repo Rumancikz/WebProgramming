@@ -29,8 +29,10 @@ function e_names(names){
     names.forEach(name => {
         // split each name
         const hans = name.split('')
+        // Retreives the last two letters of each name
         const last = hans[hans.length - 1]
         const secondLast = hans[hans.length - 2]
+        // Increment both ie and y counters
         if (secondLast + last === "ie")
         {
             IEcount += 1
@@ -40,6 +42,7 @@ function e_names(names){
             Ycount += 1
         }
     }); 
+    //logs result
     console.log(`Count of names ending in "ie" = ${IEcount}`);
     console.log(`Count of names ending in "y" = ${Ycount}`);
 }
