@@ -1,5 +1,5 @@
 
- // * Program:  4_1.js -  Exersise 4.2
+ // * Program:  4_2.js -  Exersise 4.2
 
  // * purpose:  Output: The first 20 Fibonacci numbers, which are defined as in the
 //sequence
@@ -9,7 +9,7 @@
 //the output. 
 
 
- // * Objectives: 1) Comments; 2) ; 3) ; 4)  
+ // * Objectives: 1) Comments; 2) tags ; 3)elements ; 4)documentation 
 
   //* Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
 

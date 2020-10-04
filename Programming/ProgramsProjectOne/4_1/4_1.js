@@ -3,7 +3,7 @@
 
  // * purpose: Output: A table of the numbers from 5 to 15 and their squares and cubes, using alert.  
 
- // * Objectives: 1) Comments; 2) ; 3) ; 4)  
+ // * Objectives: 1) Comments; 2) tags ; 3)elements ; 4)documentation   
 
   //* Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
 
