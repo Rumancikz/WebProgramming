@@ -5,3 +5,4 @@ button.addEventListener('click', () => {
     count = count + 1
     p.innerHTML = `I have been clicked ${count} times!`
 })
+
