@@ -29,6 +29,28 @@
 // This is a function that will write the first 20 fibonacci numbers in the series
 function yeaOkThatWorks(stringThing) {
     document.open();
+    document.write(`
+    <nav>
+        <div class="dropdown">
+            <p>Programs</p>
+            <div class="dropdown-cont">
+                <a href="../../indexProject2.html">Home</a>
+                <a href="../4_1/index.html">4.1 Index</a>
+                <a href="../4_4/index.html">4.4 Index</a>
+                <a href="../4_6/index.html">4.6 Index</a>
+                <a href="../4_7/index.html">4.7 Index</a>
+                <a href="../4_9/index.html">4.9 Index</a>
+                <a href="../4_14/index.html">4.14 Index</a>
+            </div>
+        </div>
+        <div class="names">
+            <p>Jaggan Ragoonanan - Zach Rumancik</p>
+        </div>
+        <div class="other">
+            <p>Palm Beach Atlantic University - School of Arts and Sciences</p>
+            <p>Computer Science - Web Programming</p>
+        </div>
+    </nav>`)
     document.write(`<h1>${stringThing}</h1>`);
     document.close();
 }

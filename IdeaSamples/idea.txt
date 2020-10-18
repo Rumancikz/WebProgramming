@@ -1,0 +1,5 @@
+nav bar at top with pba class information and it is sticky ex: 4 lines
+
+one line and then animated text with a fade with nav button/icons
+
+Fades while web prog stays
