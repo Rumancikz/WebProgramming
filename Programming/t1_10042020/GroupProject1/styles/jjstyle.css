@@ -1,0 +1,54 @@
+  /* * Program:  Team_1_P01_CH_02_09032020.html 
+
+  * purpose: Group Project 1 - Describe our team  
+
+  * Objectives: 1) Comments; 2) ; 3) ; 4)  
+
+  * Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
+
+  * Instructor: Dr. Fazelpour - Copyright © 2020  
+
+  * Programmer(s): Team 1 - Rumancik, Zach (ZWR); Ragoonanan, Jaggan (JR)   
+
+  * Date: 10/18/2020   */
+
+  body {
+    background-color: lightblue;
+  }
+body {
+    text-align: center;   
+}
+h2:hover{
+color: navy;
+}
+nav {
+  font-size: 5em;
+}
+nav{
+  color: black;
+}
+nav a:hover {
+  color: aliceblue;
+}
+h2 {
+  font-size: 3em;
+}
+ol{
+  font-size: 2em;
+  opacity: 0;
+}
+.Information:hover ol{
+opacity: 1;
+}
+.Education:hover ol{
+  opacity: 1;
+  }
+.language:hover ol{
+  opacity: 1;
+  }
+  h1 {
+    color:rgb(3, 3, 194);
+    text-align: center;
+
+  }
+
