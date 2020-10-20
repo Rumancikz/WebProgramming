@@ -48,10 +48,10 @@
     color:yellow;
 }
 main li{
-    padding-left: 1em;
+    margin-left: 2em;
 }
-main p, main ul{
-    padding:.3em;
+main p{
+    padding-left:.3em;
 }
 main{
     display: flex;
@@ -62,7 +62,7 @@ main{
     padding-left: .4em;
     color: white;
     background-color: rgba(0, 0, 0, 0.425);
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 main h1{
     color:yellow;

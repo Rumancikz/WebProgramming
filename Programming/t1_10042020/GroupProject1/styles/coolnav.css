@@ -199,8 +199,9 @@ a {
 .nav-container a:visited {
   color:white
 }
-.nav-container a:hover {
-  color:#00348C
+
+a:hover {
+  color:white
 }
 .face:hover {
   animation: spin 1s;
@@ -221,4 +222,21 @@ a {
 }
 .work ul, .progEx ul {
   font-size: 20px;
+}
+.tooltip .tooltiptext{
+  visibility: hidden;
+  min-width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  transition: all 0s cubic-bezier(.5, -0.005, 0.2, 1) !important;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition: all 0s cubic-bezier(.5, -0.005, 0.2, 1) !important;
 }
