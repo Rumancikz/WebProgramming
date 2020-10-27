@@ -1,16 +1,3 @@
-  /* * Program:  Team_1_P01_CH_02_09032020.html 
-
-  * purpose: Group Project 1 - Describe our team  
-
-  * Objectives: 1) Comments; 2) ; 3) ; 4)  
-
-  * Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
-
-  * Instructor: Dr. Fazelpour - Copyright © 2020  
-
-  * Programmer(s): Team 1 - Rumancik, Zach (ZWR); Ragoonanan, Jaggan (DD)   
-
-  * Date: 09/03/2020   */
 * {
     transition: all 500ms ease-out;
     -webkit-transition: all 500ms ease-out;
@@ -199,9 +186,8 @@ a {
 .nav-container a:visited {
   color:white
 }
-
-a:hover {
-  color:white
+.nav-container a:hover {
+  color:#00348C
 }
 .face:hover {
   animation: spin 1s;
@@ -222,21 +208,4 @@ a:hover {
 }
 .work ul, .progEx ul {
   font-size: 20px;
-}
-.tooltip .tooltiptext{
-  visibility: hidden;
-  min-width: 200px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-  transition: all 0s cubic-bezier(.5, -0.005, 0.2, 1) !important;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  transition: all 0s cubic-bezier(.5, -0.005, 0.2, 1) !important;
 }

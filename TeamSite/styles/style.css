@@ -1,3 +1,16 @@
+  /* * Program:  Team_1_P01_CH_02_09032020.html 
+
+  * purpose: Group Project 1 - Describe our team  
+
+  * Objectives: 1) Comments; 2) ; 3) ; 4)  
+
+  * Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
+
+  * Instructor: Dr. Fazelpour - Copyright © 2020  
+
+  * Programmer(s): Team 1 - Rumancik, Zach (ZWR); Ragoonanan, Jaggan (DD)   
+
+  * Date: 09/03/2020   */
 .spinning {
     transform: rotate(360deg);
     transition-duration: 1s;
@@ -14,3 +27,60 @@
     padding: 0 1rem;
     font-size: 20px;
 }
+body{
+    background-image:linear-gradient(90deg, #ADD8E6, rgb(41, 45, 48));
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-height: 110vh;
+}
+.pbaLogo{
+    border-radius: 5%;
+    max-width: 20em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.textstuff{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin:7em 8em;
+    padding:0em;
+    font-size: 1.3em;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #012B5D;
+    text-decoration: underline;
+}
+nav i{
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+.textstuff h1{
+    color: rgb(41, 45, 48);
+    animation-name: colorPulse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorPulse {
+    0% {
+      color: #012B5D;
+    }
+    50% {
+      color: #ADD8E6;
+    }
+    100% {
+      color: #012B5D;
+    }
+  }
+  /* rgb(41, 45, 48) */

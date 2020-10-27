@@ -1,0 +1,53 @@
+nav{
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+    padding-bottom: 1em;
+    width:100%;
+    background-color: gray;
+    min-height: 10%;
+}
+nav p{
+    padding-left: 22%;
+    font-size: 1.6em;
+}
+.push{
+    padding-left: 32%;
+}
+main {
+    padding:0em;
+    padding-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2em;
+    z-index: -1;
+}
+body{
+    max-width: 100%;
+    max-height: 100%;
+}
+.tofade{
+position: absolute;
+}
+.tofade:nth-child(1){
+animation-name: fade;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate-reverse;  
+} 
+.tofade:nth-child(2){
+animation-name: fade;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+@keyframes fade{
+    0%,50% {
+    opacity: 0;
+}
+    100%{
+    opacity: 1;
+}
+}
