@@ -33,22 +33,24 @@ nav a:hover {
 h2 {
   font-size: 3em;
 }
-ol{
-  font-size: 2em;
-  opacity: 0;
-}
-.Information:hover ol{
-opacity: 1;
-}
-.Education:hover ol{
-  opacity: 1;
-  }
-.language:hover ol{
-  opacity: 1;
-  }
   h1 {
     color:rgb(3, 3, 194);
     text-align: center;
 
   }
 
+  .Tooltip .tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+  .Tooltip:hover .tooltiptext {
+    visibility: visible;  
+  }
+.tooltiptext {
+  transform: translateY(-50px);
+  background-color: black;
+  border-radius: 5%;
+  font-size: 50px;
+  padding: 0em 1em;
+}
