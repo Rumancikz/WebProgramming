@@ -1,0 +1,61 @@
+Project Breakdown:
+    + Create and Test a html document (we are doing 3)
+     - This document must use appropriate page title
+     - several headings
+     - <em>
+     - <strong>
+     - <hr />
+     - <p>
+     - <br />
+     - Block Comment Included in each page
+    + Team Member information req:
+     - name
+     - addresses
+     - email addresses
+     - majors
+     - grade levels
+     - include pba logo
+    + If you work
+     - include employers
+     - employers’ addresses
+     - job title
+     - and so other relevant information.
+    + Reference CSC 3323 Web Programming
+    + Save your file as Team_D_P01_CH_02_MMDDYYYY.html and upload it to Canvas.
+
+Copy and Paste instructions:
+    Using Notepad++, create and test an HTML document for your team, including team members’ names, addresses,
+    email addresses, majors, and grade levels (freshman, …). Also, show your association with PBA using a 
+    formal PBA logo. If you work, include employers, employers’ addresses, job title and so other relevant information. 
+    Also, include a reference to this course (CSC 3323: Web Programming) with some reference to resources useful to this 
+    class to learn Web programming. This document must use appropriate page title, several headings and <em>, <strong>, 
+    <hr />, <p>, and <br /> tags. Use your creativity and imagination on expanding relevant information but ensure to 
+    include all required elements.  
+
+    Save your file as Team_D_P01_CH_02_MMDDYYYY.html and upload it here.
+    Please replace, D with your team number, MM, DD, YYYY, with 2-digit month, 2-digit day, and 4-digit year,
+     respectively. The submitted file name must be exactly per the instruction. 
+
+    Use the following comment block at the top of your HTML file and ensure to update the information accordingly. 
+
+    <!--  
+
+    * Program:  Team_D_P01_CH_02_MMDDYYYY.html 
+
+    * purpose: This program shows how to do some things.  
+
+    * Objectives: 1) Comments; 2) ; 3) ; 4)  
+
+    * Class: CSC 3323 - Web Programming; Fall 2020; TR: 645PM - 800PM  
+
+    * Instructor: Dr. Fazelpour - Copyright © 2020  
+
+    * Programmer(s): Team D - Last, First (DD); Last, First (DD)   
+
+    * Date: mm/dd/yyyy  
+
+    --> 
+
+
+
+        
