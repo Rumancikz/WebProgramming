@@ -1,0 +1,73 @@
+body{
+    width:100%;
+    height:100%;
+    padding: 1rem;
+}
+.animationOne, .animationTwo, .animationThree{
+    padding:0rem;
+    margin:0rem;
+}
+.BB{
+    border: 2px solid black;
+    height:600px;
+    width:600px;
+    display:flex;
+    flex-direction: row;
+}
+.leftBB{
+    border: 2px solid black;
+    height:600px;
+    width:50px;
+}
+.contentBB{
+    border: 2px solid black;
+    height:600px;
+    width:350px;
+}
+.rightBB{
+    border: 2px solid black;
+    height:600px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+}
+.topRBB{
+    border: 2px solid black;
+    height:300px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+}
+.bottomRBB{
+    border: 2px solid black;
+    height:300px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+}
+.topTitleBB{
+    border: 2px solid black;
+    height:40px;
+    width:200px;
+}
+.bottomTitleBB{
+    border: 2px solid black;
+    height:40px;
+    width:200px;
+}
+.output{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.special{
+    background-color: yellow;
+    text-align: center;
+}
+body{
+    background-image: url("../images/background3.png") ;   
+}
+p {
+    color: indigo;
+    font: 1.5em Californian FB;
+}
