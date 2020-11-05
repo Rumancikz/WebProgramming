@@ -55,7 +55,15 @@ function nextStep(stepList, atStep, animation){
         const toStep = document.querySelectorAll(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)}`)        
         toStep.forEach(element => {
             element.classList.add('step')
-        });   
+        }); 
+        if(atStep === 6 && animation === "Two"){
+            const stongTrue = document.querySelector(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)} .notsee`)
+            stongTrue.classList.add('see')
+        }  
+        if(atStep === 9 && animation === "Two"){
+            const stongTrue = document.querySelector(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)} .notsee`)
+            stongTrue.classList.add('see')
+        }  
     }    
     if (toDo2 === true){
         const toStep = document.querySelectorAll(`.${CSS.escape(animation)} .two.${CSS.escape(atStep)}`)        

@@ -66,11 +66,11 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.topRBB{
+.topRBB, .bottomRBB, .notsee{
     visibility: hidden;
 }
-.bottomRBB{
-    visibility: hidden;
+.notsee{
+    color: green;
 }
 .special{
     visibility: visible;
