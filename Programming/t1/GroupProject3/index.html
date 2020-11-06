@@ -23,6 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Group Project 3</title>
 </head>
 
@@ -122,10 +123,10 @@
                     <p class="one 4">n3 = 94</p>
                     <p class="one 5">max = n1</p>
                     <p class="one 6">if (n2 > max) then <strong class="notsee">TRUE</strong></p>
-                    <p class="one 7" style="text-indent: 50px;">max = n2</p>
+                    <p class="one 7 indent">max = n2</p>
                     <p class="one 8">endif</p>
-                    <p class="one 9">if (n3 > max) then) <strong class="notsee">TRUE</strong></p>
-                    <p class="one 10" style="text-indent: 50px;">max = n3</p>
+                    <p class="one 9 ">if (n3 > max) then) <strong class="notsee">TRUE</strong></p>
+                    <p class="one 10 indent">max = n3</p>
                     <p class="one 11">endif</p>
                     <p class="one 12">print('Numbers:',n1,n2,n3)</p>
                     <p class="one 13">print('Max is:',max)</p>
@@ -160,18 +161,40 @@
 
                 </div>
                 <div class="contentBB">
-
+                    <p class="one 1">start</p>
+                    <p class="one 2">cnt = 0</p>
+                    <p class="one 3 ">loop (cnt < 3)</p>
+                    <p class="one 4 indent">Input('radius: 'radius)</p>
+                    <p class="one 5 indent"> peri=2*PI*radius</p>
+                    <p class="one 6 indent">area = PI * (radius **2) </p>
+                    <p class="one 7 indent">print('radius=',radius) </p>
+                    <p class="one 8 indent">print ('P =', Peri, 'A=',area) </p>
+                    <p class="one 9 indent">cnt =cnt+1 </p>
+                    <p class="one 10">Endloop </p>
+                    <p class="one 11">stop </p>
+                    <button class="Three bob">Next Step</button>
                 </div>
                 <div class="rightBB">
                     <div class="topRBB">
                         <div class="topTitleBB special">
                             <p>Memory Diagram</p>
                         </div>
+                        <p class="two 2">cnt 1</p>
+                        <p class="two 3">PI 3.14</p>
+                        <p class="two 4">radius 7</p>
+                        <p class="two 5">peri 43.96</p>
+                        <p class="two 6">area 153.86</p>
                     </div>
                     <div class="bottomRBB">
                         <div class="bottomTitleBB special">
                             <p>Output</p>
                         </div>
+                        <p class="three 12">radius: 7</p>
+                        <p class="three 7">radius = 7</p>
+                        <p class="three 8">P= 43.96 and A= 153.86</p>
+                        <p class="three 7">radius = 11</p>
+                        <p class="three 8">P= 68..96 and A= 379.94</p>
+                        
                     </div>
                 </div>
             </div>

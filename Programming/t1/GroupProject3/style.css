@@ -8,6 +8,12 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
+.indent{
+    text-indent: 50px;
+}
+.Answers{
+    background-color: rgba(255, 255, 255, 0.3);
+}
 .animation{
     padding:1rem;
     margin:0rem;
@@ -62,11 +68,13 @@ body{
     border: 2px solid black;
     height:40px;
     width:200px;
+    position: relative; left: -4px; top: -5px;
 }
 .bottomTitleBB{
     border: 2px solid black;
     height:40px;
     width:200px;
+    position: relative; left: -4px; top: -5px;
 }
 .output{
     display: flex;
@@ -114,5 +122,4 @@ p {
 }
 .see{
     visibility: visible;
-
 }
