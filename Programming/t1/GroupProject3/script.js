@@ -31,12 +31,49 @@ function nextStep(stepList, atStep, animation){
         if(atStep === 9 && animation === "Two"){
             $(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)} .notsee`).addClass('see')
         }  
+        if(atStep === 3 && animation === "Three"){
+            $(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)} .notsee`).addClass('see')
+        }  
+        if(atStep === 9 && animation === "Three" && atStep3b === 2){
+            $(`.${CSS.escape(animation)} .one.3 .notsee`).addClass('see2')
+            const ture = document.querySelector(`.see2`)
+            ture.innerHTML = 'False'
+        }  
     }    
     if (toDo2 === true){  
         $(`.${CSS.escape(animation)} .two.${CSS.escape(atStep)}`).addClass('step see')
     }
     if (toDo3 === true){
-        $(`.${CSS.escape(animation)} .three.${CSS.escape(atStep)}`).addClass('step see')   
+        const hold = ["t6","t8","t9"]
+        if (animation === 'Three'){
+            console.log(atStep3b);
+            document.querySelectorAll(`#${CSS.escape(hold[atStep3b])}`).forEach(elemetn=>{
+                elemetn.classList.add('see') 
+                elemetn.classList.add('step') 
+            })
+
+        }else{
+            $(`.${CSS.escape(animation)} .three.${CSS.escape(atStep)}`).addClass('step see')   
+        }
+    }
+    const t1 = document.getElementById('t1')
+    const t2 = document.getElementById('t2')
+    const t3 = document.getElementById('t3')
+    const t4 = document.getElementById('t4')
+    const t5 = document.getElementById('t5')
+    if (atStep3 === 3 && atStep3b === 1){
+        t1.innerHTML = 'cnt 1'
+        t2.innerHTML = 'PI 3.14'
+        t3.innerHTML = 'radius 7'
+        t4.innerHTML = 'peri 43.96'
+        t5.innerHTML = 'area 153.86'
+    }
+    if (atStep3 === 3 && atStep3b === 2){
+        t1.innerHTML = 'cnt 2'
+        t2.innerHTML = 'PI 3.14'
+        t3.innerHTML = 'radius 11'
+        t4.innerHTML = 'peri 68.08'
+        t5.innerHTML = 'area 379.94'
     }
 }
 function clearStep(animation) {
@@ -44,6 +81,18 @@ function clearStep(animation) {
 }
 function clearSee(animation) {
     $(`.${CSS.escape(animation)} .see`).removeClass('see')
+}
+function clearSee2(animation) {
+    const ture = document.querySelector(`.${CSS.escape(animation)} .see2`)
+    ture.innerHTML = "True"
+    $(`.${CSS.escape(animation)} .see2`).removeClass('see2')
+}
+function clear3rdInner(){
+    document.getElementById('t1').innerHTML = 'cnt 0'
+    document.getElementById('t2').innerHTML = 'PI 3.14'
+    document.getElementById('t3').innerHTML = 'radius 7'
+    document.getElementById('t4').innerHTML = 'peri 43.96'
+    document.getElementById('t5').innerHTML = 'area 153.86'
 }
 let atStep1 = 0
 let atStep2 = 0
@@ -87,7 +136,6 @@ $('button.Two').click(()=> {
 $('button.Three').click(()=> {
     atStep3 += 1
     if (atStep3 < 12){
-        console.log(atStep3)
         nextStep(stepList3, atStep3, 'Three')
     }
     else{
@@ -95,5 +143,7 @@ $('button.Three').click(()=> {
         atStep3b = 0
         clearStep('Three')
         clearSee('Three')
+        clearSee2('Three')
+        clear3rdInner()
     }
 })
