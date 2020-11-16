@@ -11,3 +11,54 @@
  * Programmer(s): Team 1 - Rumancik, Zach (ZWR); Ragoonanan, Jaggan  
 
  * Date: 11/12/2020 */
+
+ body {
+     background-image:url("../GP4JJ/media/dark-blue-watercolor-background-design_1034-737.jpg");
+     text-align: center;
+     
+ }
+.Call_of_Code{
+    width: 300px;
+}
+.SpeedCode {
+    width: 300px;
+}
+.High_performing_Computing_Challenge {
+    width: 300px;
+}
+.Ozaria {
+width: 300px;
+}
+.Silent_Teacher {
+    width: 300px ;
+}
+.Create2dAdventure{
+    width: 300px;
+}
+p {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    color: white;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+.right_nav {
+    text-align: left;
+}
+.left_nav {
+    text-align: right;
+    text-size-adjust: 3em;
+}
+nav {
+    font-size: 1.2em;
+    top: 0;
+    width:100%;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
