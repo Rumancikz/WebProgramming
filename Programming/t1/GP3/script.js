@@ -20,7 +20,7 @@ function nextStep(stepList, atStep, animation){
     const toDo3 = step3Arr.includes(atStep)
     clearStep(animation)
     if (toDo1 === true){
-        if (atStep3 === 10 && animation === 'Three' && atStep3b < 2){
+        if (atStep3 === 11 && animation === 'Three' && atStep3b < 2){
             atStep3 = 2
             atStep3b += 1
         }
@@ -31,13 +31,15 @@ function nextStep(stepList, atStep, animation){
         if(atStep === 9 && animation === "Two"){
             $(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)} .notsee`).addClass('see')
         }  
-        if(atStep === 3 && animation === "Three"){
+        if(atStep === 4 && animation === "Three"){
             $(`.${CSS.escape(animation)} .one.${CSS.escape(atStep)} .notsee`).addClass('see')
         }  
-        if(atStep === 9 && animation === "Three" && atStep3b === 2){
-            $(`.${CSS.escape(animation)} .one.3 .notsee`).addClass('see2')
-            const ture = document.querySelector(`.see2`)
-            ture.innerHTML = 'False'
+        if(atStep === 10 && animation === "Three" && atStep3b === 2){
+            console.log($(`.${CSS.escape(animation)} .one.3 .notsee`));
+            TFtoggle($(`.${CSS.escape(animation)} .one.3 .notsee`))
+            // $(`.${CSS.escape(animation)} .one.3 .notsee`).addClass('see2')
+            // const ture = document.querySelector(`.see2`)
+            // ture.innerHTML = 'False'
         }  
     }    
     if (toDo2 === true){  
@@ -84,7 +86,7 @@ function clearSee(animation) {
 }
 function clearSee2(animation) {
     const ture = document.querySelector(`.${CSS.escape(animation)} .see2`)
-    ture.innerHTML = "True"
+    ture.innerHTML = "TRUE"
     $(`.${CSS.escape(animation)} .see2`).removeClass('see2')
 }
 function clear3rdInner(){
@@ -93,6 +95,17 @@ function clear3rdInner(){
     document.getElementById('t3').innerHTML = 'radius 7'
     document.getElementById('t4').innerHTML = 'peri 43.96'
     document.getElementById('t5').innerHTML = 'area 153.86'
+}
+function TFtoggle(element){
+    if (element.html() === "TRUE"){
+        element.html('FALSE')
+        element.addClass('see2')
+    }else if (element.html() === "FALSE"){
+        element.html('TRUE')
+        element.addClass('see')
+    }else{
+        return null
+    }
 }
 let atStep1 = 0
 let atStep2 = 0
@@ -110,7 +123,7 @@ const stepList2 = {
 }
 const stepList3 = {
     "1":[1,2,3,4,5,6,7,8,9,10,11,12],
-    '2':[2,3,4,5,6,7,10],
+    '2':[2,3,5,6,7,8,11],
     '3':[8,9],
 }
 $('button.One').click(()=> {
