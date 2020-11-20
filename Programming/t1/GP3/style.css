@@ -141,3 +141,66 @@ p {
 .see2{
     color: red;
 }
+.Four div div{
+    background-color: white;
+    flex-wrap: wrap;
+}
+.Four div p{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.square{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.diamond{
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    rotate: 45deg;
+}
+.diamond p{
+    rotate: -45deg;
+}
+.circle{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100%;
+}
+.round{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25%;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.empty{
+    width: 150px;
+    height: 100px;
+    background-color: transparent !important;
+}
+.v{
+    height: 100px;
+    width: 3px;
+}
+.h{
+    width: 150px;
+    height: 3px;
+}
+.line{
+    background-color: black !important;
+}
