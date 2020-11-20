@@ -1,7 +1,11 @@
-function toggleCSS(boo) {
-    if (boo){
-        const sheet = document.createElement('style')
-        sheet.innerHTML = `html, body{
+function toggleCSS() {
+    isCSS = !isCSS  
+    const sheet = document.createElement('style')
+    console.log(isCSS);
+    if (isCSS){
+
+        sheet.innerHTML = `
+        html, body{
             width: 100%;
             height: 100%;
             padding: 0rem;
@@ -34,16 +38,15 @@ function toggleCSS(boo) {
         }
         `;
         document.body.appendChild(sheet);
+    }else if(!isCSS){
+        sheet.remove();
     }else{
-        const sheet = document.createElement('style')
-        sheet.innerHTML = ``;
-        document.body.appendChild(sheet);
+        return null
     }
 }
 
-let isCSS = true
+let isCSS = false
 const toggle = document.getElementById('toggle')
-toggle.addEventListener('click',()=> {
-    isCSS = !isCSS
-    toggleCSS(isCSS)
+toggle.addEventListener('click', () => {
+    toggleCSS()  
 })
