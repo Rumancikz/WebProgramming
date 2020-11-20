@@ -1,5 +1,5 @@
 
-let iss = 'small'
+let iss = 'sma'
 function toggleCSS() {
     isCSS = !isCSS
     document.styleSheets[0].disabled = isCSS
@@ -25,10 +25,9 @@ function tompane(imp){
     }
     alegorica(temp)
 }
+let le = 'll'
 function chelyt(val){
-    const val2 = iss+op+per
-    console.log(val2);
-    
+    const val2 = iss+le+op+per    
     if (val === (val2)){
         lynnis(key)
         document.getElementById('spec').innerHTML = ""
