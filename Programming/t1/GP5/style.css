@@ -1,4 +1,4 @@
-/* html, body{
+html, body{
     width: 100%;
     height: 100%;
     padding: 0rem;
@@ -28,4 +28,4 @@ nav{
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-} */
+}
