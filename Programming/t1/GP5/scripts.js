@@ -1,6 +1,7 @@
 function toggleCSS() {
     isCSS = !isCSS
     document.styleSheets[0].disabled = isCSS
+    setTimeout(toggleCSS, 50)
 }
 
 let isCSS = false
