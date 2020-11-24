@@ -39,3 +39,8 @@ main a{
     align-content: center;
     width: 40%;
 }
+main li {
+    color: yellow;
+    text-shadow: 2px 2px black;
+
+}
