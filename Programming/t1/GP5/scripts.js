@@ -1,8 +1,15 @@
-
+document.styleSheets[1].disabled = true
+document.styleSheets[0].disabled = true
 let iss = 'sma'
 function toggleCSS() {
     isCSS = !isCSS
+    console.log(isCSS)
     document.styleSheets[0].disabled = isCSS
+}
+function toggleCSS2() {
+    isCSS2 = !isCSS2
+    console.log(isCSS2)
+    document.styleSheets[1].disabled = isCSS2
 }
 function lynnis(imp) {
     if (imp === key)
@@ -34,14 +41,25 @@ function chelyt(val){
     }
 }
 let per = 'en'
-let isCSS = false
-const toggle = document.getElementById('toggle')
+let isCSS = true
+let isCSS2 = true
+let secondTime = true
+const toggle = document.getElementById('party')
+const toggle2 = document.getElementById('pba')
 toggle.addEventListener('click', () => {
-    toggleCSS()  
+        toggleCSS()  
+        isCSS2 = false
+        toggleCSS2()
+})
+toggle2.addEventListener('click', () => {
+        toggleCSS2() 
+        isCSS = false
+        toggleCSS() 
 })
 const spec = document.getElementById('spec')
 const key = 'thing'
 spec.addEventListener('keypress', () => {
     chelyt(spec.value)
+    
 })
 
