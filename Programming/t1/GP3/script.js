@@ -128,35 +128,52 @@ const stepList3 = {
 }
 $('button.One').click(()=> {
     atStep1 += 1
-    if (atStep1 < 7){
+    // if (atStep1 < 7){
         nextStep(stepList1, atStep1, 'One')
-    }else{
-        atStep1 = 0
-        clearStep('One')
-        clearSee('One')
-    }
+    // }else{
+    //     atStep1 = 0
+    //     clearStep('One')
+    //     clearSee('One')
+    // }
 })
 $('button.Two').click(()=> {
     atStep2 += 1
-    if (atStep2 < 15){
+    // if (atStep2 < 15){
         nextStep(stepList2, atStep2, 'Two')
-    }else{
-        atStep2 = 0
-        clearStep('Two')
-        clearSee('Two')
-    }
+    // }else{
+    //     atStep2 = 0
+    //     clearStep('Two')
+    //     clearSee('Two')
+    // }
 })
 $('button.Three').click(()=> {
     atStep3 += 1
-    if (atStep3 < 12){
+    // if (atStep3 < 12){
         nextStep(stepList3, atStep3, 'Three')
-    }
-    else{
-        atStep3 = 0
-        atStep3b = 0
-        clearStep('Three')
-        clearSee('Three')
-        clearSee2('Three')
-        clear3rdInner()
-    }
+    // }
+    // else{
+    //     atStep3 = 0
+    //     atStep3b = 0
+        // clearStep('Three')
+        // clearSee('Three')
+        // clearSee2('Three')
+        // clear3rdInner()
+    // }
+})
+$('button#reset').click(()=> {
+    atStep1 = 0
+    atStep2 = 0
+    atStep3 = 0
+    atStep3b = 0
+
+    clearStep('One')
+    clearSee('One')
+
+    clearStep('Two')
+    clearSee('Two')
+
+    clearStep('Three')
+    clearSee('Three')
+    clearSee2('Three')
+    clear3rdInner()
 })
